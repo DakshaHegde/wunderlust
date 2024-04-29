@@ -1,30 +1,780 @@
-body {
-  margin: 0;
-  line-height: normal;
+.mobile-iphone-12-pro-max-child {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  background: linear-gradient(180deg, #55bcd5, rgba(255, 255, 255, 0));
+  width: 429px;
+  height: 391px;
 }
-
-:root {
-  /* fonts */
-  --font-montserrat: Montserrat;
-  --font-molle: Molle;
-
-  /* font sizes */
-  --font-size-11xl: 30px;
-  --font-size-21xl: 40px;
-  --font-size-base: 16px;
-  --font-size-xl: 20px;
-  --font-size-7xl: 26px;
-
-  /* Colors */
-  --color-white: #fff;
-  --color-darkorchid: #9b26b0;
-  --color-black: #000;
-  --color-gray: #222;
-  --color-skyblue: #55bcd5;
-  --color-gold: #f6d64a;
-
-  /* Border radiuses */
-  --br-3xs: 10px;
-  --br-981xl: 1000px;
-  --br-19xl: 38px;
+.logo-icon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.logo,
+.logo-icon,
+.menu {
+  position: absolute;
+}
+.logo {
+  top: 7.5px;
+  left: 0;
+  width: 160.3px;
+  height: 69.5px;
+}
+.menu {
+  top: calc(50% - 9px);
+  left: calc(50% - 24px);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu-wrapper {
+  position: absolute;
+  top: 27px;
+  right: -1px;
+  background-color: var(--color-gold);
+  width: 210px;
+  height: 50px;
+  font-size: 15px;
+}
+.let-wunderlust-travel,
+.wunderlust {
+  position: absolute;
+  left: 37px;
+  line-height: 30px;
+  color: var(--color-gray);
+}
+.wunderlust {
+  top: 102px;
+  font-size: 50px;
+  font-family: var(--font-molle);
+}
+.let-wunderlust-travel {
+  top: 151px;
+  display: inline-block;
+  width: 355px;
+}
+.majorca-waves {
+  position: absolute;
+  top: 590px;
+  left: 0;
+  width: 428px;
+  height: 340px;
+}
+.mobile-iphone-12-pro-max-item {
+  position: absolute;
+  top: 1676px;
+  left: -1px;
+  background-color: var(--color-gold);
+  width: 430px;
+  height: 1349px;
+}
+.how-to-get {
+  position: absolute;
+  top: 27px;
+  left: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.icon-metro-airplane {
+  position: absolute;
+  bottom: 40.25px;
+  left: calc(50% - 96.25px);
+  width: 179.9px;
+  height: 179.9px;
+}
+.how-to-get-there-parent {
+  position: absolute;
+  top: 1765px;
+  left: 34px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  border: 3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 358px;
+  height: 302px;
+  font-size: var(--font-size-7xl);
+}
+.plan-your-trip,
+.testimonials {
+  position: absolute;
+  top: 1706px;
+  left: 42px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-molle);
+}
+.testimonials {
+  top: 3078px;
+  left: 43px;
+}
+.miranda-blake {
+  position: absolute;
+  top: 3136px;
+  left: 120px;
+  width: 200px;
+  height: 200px;
+}
+.amanda-blake {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.london-england {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray);
+}
+.i-traveled-here-for-business {
+  margin: 0;
+}
+.amanda-blake-london-england-container {
+  position: absolute;
+  top: 3347px;
+  right: 59px;
+  text-align: center;
+  display: inline-block;
+  width: 297px;
+  font-size: var(--font-size-11xl);
+}
+.mobile-iphone-12-pro-max-inner {
+  position: absolute;
+  top: 4604px;
+  left: 0;
+  background-color: #499bd2;
+  width: 428px;
+  height: 532px;
+}
+.about-your-destination-container {
+  position: absolute;
+  top: 4634px;
+  left: 37px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-molle);
+}
+.feet {
+  margin: 0;
+  color: var(--color-gray);
+}
+.elevation-4741-feet {
+  position: absolute;
+  top: 4865px;
+  left: 229px;
+  line-height: 30px;
+  text-align: center;
+}
+.icon-awesome-mountain {
+  position: absolute;
+  top: 4754px;
+  left: 226px;
+  width: 125px;
+  height: 100px;
+}
+.size {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-black);
+}
+.size-1405-mi-sq-container {
+  position: absolute;
+  top: 4865px;
+  left: 77px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-gray);
+}
+.icon-awesome-ruler-combined {
+  position: absolute;
+  top: 4754px;
+  left: 87px;
+  width: 100px;
+  height: 100px;
+}
+.contact-us {
+  position: absolute;
+  top: 5166px;
+  left: 40px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-molle);
+}
+.area {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-19xl);
+  border: 3px solid var(--color-darkorchid);
+  box-sizing: border-box;
+  width: 75px;
+}
+.area,
+.dot,
+.value {
+  position: absolute;
+}
+.dot {
+  height: calc(100% - 4px);
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  border-radius: var(--br-981xl);
+  background-color: var(--color-black);
+  width: 20px;
+  opacity: 0;
+}
+.value {
+  top: -0.5px;
+  right: -0.5px;
+  -webkit-text-stroke: 1px transparent;
+}
+.radio1 {
+  top: calc(50% - 11.5px);
+  right: 0;
+  width: 86px;
+  height: 24px;
+}
+.area1,
+.radio,
+.radio1 {
+  position: absolute;
+}
+.radio {
+  bottom: 897px;
+  left: 43px;
+  width: 130px;
+  height: 75px;
+  color: var(--color-gray);
+}
+.area1 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid var(--color-darkorchid);
+  box-sizing: border-box;
+}
+.text {
+  bottom: 661px;
+  left: 43px;
+  width: 354px;
+  height: 75px;
+}
+.text,
+.text1,
+.value1 {
+  position: absolute;
+}
+.text1 {
+  bottom: 533px;
+  left: 43px;
+  width: 354px;
+  height: 75px;
+}
+.value1 {
+  bottom: 1278.5px;
+  left: 56.5px;
+  color: var(--color-gray);
+  -webkit-text-stroke: 1px transparent;
+}
+.typography {
+  top: 5219px;
+  left: 41px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+}
+.text2,
+.typography,
+.value2 {
+  position: absolute;
+}
+.text2 {
+  bottom: 1125px;
+  left: 41px;
+  width: 356px;
+  height: 75px;
+}
+.value2 {
+  bottom: 1150.5px;
+  left: 60.5px;
+  color: var(--color-gray);
+  -webkit-text-stroke: 1px transparent;
+}
+.text3,
+.typography1 {
+  position: absolute;
+  left: 41px;
+}
+.typography1 {
+  bottom: 1183px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+}
+.text3 {
+  top: 5244px;
+  width: 356px;
+  height: 75px;
+}
+.typography2 {
+  bottom: 1056px;
+  left: 43px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 222px;
+  height: 44px;
+}
+.radio2,
+.radio3,
+.typography2 {
+  position: absolute;
+}
+.radio3 {
+  top: calc(50% - 11.5px);
+  right: 0;
+  width: 102px;
+  height: 24px;
+}
+.radio2 {
+  bottom: 992px;
+  left: 40px;
+  width: 149px;
+  height: 75px;
+  color: var(--color-gray);
+}
+.typography3,
+.typography4 {
+  position: absolute;
+  bottom: 717px;
+  left: 37px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 185px;
+  height: 44px;
+}
+.typography4 {
+  bottom: 592px;
+  width: 192px;
+}
+.value4,
+.value5 {
+  position: absolute;
+  bottom: 686.5px;
+  left: 55.5px;
+  color: var(--color-gray);
+  -webkit-text-stroke: 1px transparent;
+}
+.value5 {
+  bottom: 558.5px;
+}
+.typography5,
+.typography6 {
+  position: absolute;
+  bottom: 332px;
+  left: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 226px;
+  height: 44px;
+}
+.typography6 {
+  bottom: 463px;
+  width: 222px;
+}
+.area6 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 3px solid var(--color-darkorchid);
+  box-sizing: border-box;
+}
+.label,
+.path-icon {
+  position: absolute;
+  top: calc(50% - 11.5px);
+}
+.label {
+  left: 16px;
+}
+.path-icon {
+  right: 36.3px;
+  width: 44.2px;
+  height: 23.6px;
+}
+.dropbdown,
+.required {
+  color: var(--color-gray);
+}
+.dropbdown {
+  position: absolute;
+  bottom: 405px;
+  left: 43px;
+  width: 354px;
+  height: 75px;
+}
+.required {
+  top: 5179px;
+  right: -37px;
+  display: inline-block;
+  width: 204px;
+}
+.radio4,
+.radio5,
+.required {
+  position: absolute;
+}
+.radio5 {
+  top: calc(50% - 11.5px);
+  right: 0;
+  width: 111px;
+  height: 24px;
+}
+.radio4 {
+  bottom: 802px;
+  left: 43px;
+  width: 155px;
+  height: 75px;
+  color: var(--color-gray);
+}
+.majorca-beach,
+.majorca-cove {
+  position: absolute;
+  top: 946px;
+  left: 0;
+  width: 429px;
+  height: 341px;
+}
+.majorca-cove {
+  top: 1303px;
+  left: -289px;
+  width: 874px;
+}
+.where-to-eat {
+  position: absolute;
+  top: 27px;
+  left: calc(50% - 107.5px);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.icon-metro-spoon-fork {
+  position: absolute;
+  bottom: 36.53px;
+  left: calc(50% - 89.7px);
+  width: 166.5px;
+  height: 197.3px;
+}
+.where-to-eat-parent {
+  position: absolute;
+  top: 2698px;
+  left: 35px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  border: 3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 357px;
+  height: 302px;
+  font-size: var(--font-size-7xl);
+}
+.things-to-do {
+  position: absolute;
+  top: 26px;
+  left: calc(50% - 102px);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.icon-map-sailing {
+  position: absolute;
+  bottom: 32.64px;
+  left: calc(50% - 93.92px);
+  width: 180.4px;
+  height: 196.8px;
+}
+.things-to-do-parent {
+  position: absolute;
+  top: 2387px;
+  left: 36px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  border: 3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 356px;
+  height: 301px;
+  font-size: var(--font-size-7xl);
+}
+.places-to-stay {
+  position: absolute;
+  top: 27px;
+  left: calc(50% - 116px);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.icon-ionic-md-bed {
+  position: absolute;
+  width: calc(100% - 133.1px);
+  top: calc(50% - 53.85px);
+  right: 66.54px;
+  left: 66.56px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 149.9px;
+}
+.places-to-stay-parent {
+  position: absolute;
+  top: 2075px;
+  left: 36px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-skyblue);
+  border: 3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 358px;
+  height: 302px;
+  font-size: var(--font-size-7xl);
+}
+.max-winter {
+  position: absolute;
+  top: 3489px;
+  left: 114px;
+  width: 200px;
+  height: 200px;
+}
+.ins-villegos-barcelona-spain-container,
+.max-winter-berlin-germany-gr-container {
+  position: absolute;
+  top: 3700px;
+  left: 66px;
+  text-align: center;
+  display: inline-block;
+  width: 297px;
+  font-size: var(--font-size-11xl);
+}
+.ins-villegos-barcelona-spain-container {
+  top: 4078px;
+  left: 62px;
+  width: 305px;
+}
+.ines-villegoes {
+  position: absolute;
+  top: 3867px;
+  left: 110px;
+  width: 200px;
+  height: 200px;
+}
+.carmen-lorenzo-madrid-spain-container {
+  position: absolute;
+  top: 4409px;
+  left: 66px;
+  text-align: center;
+  display: inline-block;
+  width: 297px;
+  font-size: var(--font-size-11xl);
+}
+.carmen-lorenzo1 {
+  position: absolute;
+  top: 4198px;
+  left: 114px;
+  width: 200px;
+  height: 200px;
+}
+.location-mediterranean,
+.population-923608 {
+  position: absolute;
+  line-height: 30px;
+  text-align: center;
+}
+.location-mediterranean {
+  top: 5057px;
+  left: 62px;
+}
+.population-923608 {
+  top: 5055px;
+  right: 61px;
+}
+.icon-material-location-on {
+  position: absolute;
+  top: 4946px;
+  left: 101px;
+  width: 70px;
+  height: 100px;
+}
+.icon-material-group {
+  position: absolute;
+  top: 4944px;
+  right: 62.03px;
+  width: 141.4px;
+  height: 100px;
+}
+.label1 {
+  position: absolute;
+  bottom: 301px;
+  left: 51px;
+  color: var(--color-white);
+}
+.area8,
+.dropbdown1 {
+  position: absolute;
+  left: 43px;
+  width: 354px;
+  height: 75px;
+}
+.area8 {
+  bottom: 175px;
+  background-color: var(--color-darkorchid);
+}
+.dropbdown1 {
+  bottom: 278px;
+  color: var(--color-gray);
+}
+.rectangle-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #eaeaea;
+  width: 434px;
+  height: 154px;
+}
+.copyright-2021 {
+  position: absolute;
+  bottom: 116px;
+  left: 77px;
+  font-size: var(--font-size-base);
+}
+.label3 {
+  position: absolute;
+  bottom: 200px;
+  left: 179px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: center;
+}
+.privacy-statement,
+.terms-of-service-container {
+  position: absolute;
+  bottom: 68px;
+  left: 139px;
+  font-size: var(--font-size-base);
+}
+.terms-of-service-container {
+  bottom: 30px;
+  left: 149px;
+}
+.imagine-an-island {
+  position: absolute;
+  height: calc(100% - 55px);
+  width: calc(100% + 1px);
+  top: 55px;
+  left: 0;
+  line-height: 30px;
+  display: inline-block;
+}
+.majorca {
+  position: absolute;
+  top: 0;
+  left: 0.85%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-molle);
+  color: var(--color-black);
+}
+.imagine-an-island-with-turquoi-parent {
+  position: absolute;
+  top: 260px;
+  left: 37px;
+  width: 354px;
+  height: 330px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+}
+.ellipse-icon {
+  position: absolute;
+  bottom: 1006px;
+  left: 54px;
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+}
+.div,
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  position: absolute;
+  font-size: var(--font-size-11xl);
+  color: var(--color-darkorchid);
+  text-align: center;
+}
+.div {
+  top: 5215px;
+  left: 172px;
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  bottom: 1194px;
+  left: 166px;
+}
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  bottom: 1067px;
+  left: 244px;
+}
+.div3,
+.div4,
+.div5,
+.div6 {
+  bottom: 731px;
+  left: 212px;
+}
+.div4,
+.div5,
+.div6 {
+  bottom: 603px;
+  left: 214px;
+}
+.div5,
+.div6 {
+  bottom: 477px;
+  left: 178px;
+}
+.div6 {
+  bottom: 346px;
+  left: 173px;
+}
+.mobile-iphone-12-pro-max {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 6572px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
 }
