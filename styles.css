@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --font-molle: Molle;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-base: 16px;
+  --font-size-xl: 20px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkorchid: #9b26b0;
+  --color-black: #000;
+  --color-gray: #222;
+  --color-skyblue: #55bcd5;
+  --color-gold: #f6d64a;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-981xl: 1000px;
+  --br-19xl: 38px;
+}
