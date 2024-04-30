@@ -4,244 +4,672 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
-
-/* ---------- BEGIN CUSTOM STYLES ---------- */
-
-*{
-	font-family: sans-serif;
-	line-height: 1.35;
-}
-
-#skipLink{
-	position: absolute;
-	left: -999px;
-	height:  0;
-	width:  0;
-}
-
-#skipLink:focus{
-	top: 1em;
-	left: 1em;
-	display: block;
-	font-size: 1.2em;
-	padding: 0.5em;
-	width: 25%;
-	height: 1.5em;
-	line-height: 1.3em;
-}
-
-a{
-	color: #0a58ff;
-}
-
-a:focus{
-	border: 2px solid #0a58ff;
-}
-
-a:hover{
-	color: white;
-	background-color: #0a58ff;
-}
-
-header{
-	padding: 2em 0 1em 0;
-	border-bottom: 5px solid #0a58ff;
-}
-
-h1, h2, h3{
-	font-family: sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
-	text-align: center;
-}
-
-h1{
-	font-size: 2em;
-	padding: 0.5em;
-}
-
-.sr-only{
-	position: absolute;
-	width: 1px;
-	height: 1px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
 	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap; /* added line */
-	border: 0; 
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-nav ul{
-	width: 100%;
-	max-width: 800px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
-ul li{
-	display: inline-block;
-}
-
-nav a{
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
 	display: block;
-	padding: 1em;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 1.2em;
-	font-weight: bold;
-	text-align: center;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-#particleBackground{
-  	width: 100%;
-  	height: 300px;
-  	background-image: url("https://www.public.asu.edu/~jlbarn11/teaching/cool-background.svg");
-  	background-color: rgba(77, 77, 77, 0.2);
-  	background-repeat: no-repeat;
-  	background-position: right;
-	border-bottom: 5px solid #0a58ff;
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-main{
-	width: calc(100% - 2em);
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 1em;
+/* Brand Colors */
+:root {
+  --color-yellow: #F6D64A;
+  --color-teal: #55BCD5;
+  --color-purple: #9B26B0;
+  --color-blue: #499BD2;
+  --color-dark-gray: #222222;
+  --color-light-gray: #EAEAEA;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
 }
 
-h2{
-	font-size: 1.5em;
-	margin: 0.5em 0;
+/* Fonts */
+h1, h2, h3 {
+  font-family: 'Molle', sans-serif;
 }
 
-p{
-	width: 100%;
-	max-width: 650px;
-	margin:  0 auto;
+h4, p, q, small, nav, button, form,
+a {
+  font-family: 'Montserrat', monospace;
 }
 
-section{
-	margin: 1em 0;
+h1 {
+  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-h3{
-	font-size: 1.35em;
-	margin: 0.5em 0;
+h2, h3 {
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 1em;
 }
 
-form{
-	width: 90%;
-	max-width: 350px;
-	margin:  2em auto;
-	padding:  0.75em;
-	border: 2px solid #777;
-	border-radius: 0.2em;
+h4 {
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-input, label, textarea{
-	display: block;
-	width: calc(100% - 2em);
+p {
+  line-height: 1.5em;
 }
 
-input, textarea, select{
-	outline: 1px solid #222;
-	border: none;
-	border-radius: 0.2em;
+/* Styles */
+#img-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-label{
-	font-size: 1.1em;
+#img-grid img {
+  width: 100%;
+  margin-bottom: 1em;
 }
 
-.required{
-	color: #c71819;
+/* Skip Link */
+#skip {
+  background: #e77e23;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-150%);
+  transition: transform 0.5s;
 }
 
-input{
-	width: 90%;
-	margin: 0.25em auto 0.5em auto;
-	padding: 0.5em;
+#skip:focus {
+  transform: translateY(0%);
 }
 
-input:focus, select:focus, textarea:focus{
-	border: 2px inset #0a58ff;
-	box-shadow: 0 0 0 0.09em currentColor;
+/* Header */
+header {
+  --logo-height: 100px;
+  --logo-width: 230px;
+  --logo-width-large: 300px;
+  --logo-name-height: 10em;
+  --logo-description-height: 10em;
+  display: block;
+  width: 100vw;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--color-teal) 10%, var(--color-white) 95%);
+  display: block;
+  width: 100vw;
+  height: calc(var(--logo-height) + var(--logo-name-height));
 }
 
-input:error, select:error, textarea:error{
-	background-color: #c71819;
+@media (max-width: 767px) {
+  header img {
+    position: absolute;
+    width: auto;
+    top: 1vh;
+    left: 0;
+    height: var(--logo-height);
+  }
+
+  header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    margin: 0;
+  }
+
+  #menu-toggle {
+    --dropdown-top: 40px;
+    --dropdown-btn-height: 40px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+    user-select: none;
+    top: var(--dropdown-top);
+    font-size: small;
+    font-weight: 600;
+  }
+
+  #menu-toggle input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #menu-toggle label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--color-yellow);
+    padding: calc(var(--dropdown-btn-height)/2 - 0.5em) 0px;
+    width: 100%;
+    z-index: 2;
+    transition: left 0.3s ease;
+  }
+
+  #menu-toggle input:checked~label {
+    left: -100%;
+    width: 200%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  #menu-toggle ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: calc(var(--dropdown-btn-height) + var(--dropdown-top));
+    background: var(--color-white);
+    left: 100%;
+    list-style-type: none;
+    transition: left 0.3s ease;
+  }
+
+  #menu-toggle input:checked~ul {
+    left: 0;
+  }
+
+  #menu-toggle ul li {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-blue);
+  }
+
+  #menu-toggle a {
+    text-decoration: none;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+  }
+
+
+  header h1 {
+    position: relative;
+    top: calc(var(--logo-height) + 20px);
+    padding: 0px 20px;
+    padding-top: 10px;
+  }
+
+  header p {
+    position: relative;
+    top: calc(var(--logo-height) + 20px);
+    font-size: large;
+    padding: 0px 20px;
+  }
+
+  #intro, #plan, #testimonials, #about, #contact {
+    padding: 1em 20px;
+  }
+
+  #plan img {
+    padding: 0 2em;
+  }
+
+  #img-grid {
+    margin: 0 -20px;
+  }
+
+  #testimonials div section {
+    width: 75%;
+    margin-bottom: 1em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-light-gray);
+    padding: 1em 0.5em;
+  }
+
+  #nums fieldset {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 }
 
-fieldset{
-	margin: 0.5em auto;
-	padding-bottom: 0.5em;
-	width: 94%;
-	border: 1px solid #222;
-	border-radius: 0.2em;
-	display: grid;
-	grid-template-columns: 30px 1fr 30px 1fr;
+@media (min-width: 768px) {
+
+  header {
+    padding-top: 40px;
+    height: calc( var(--logo-height) + 60px);
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  header img {
+    position: absolute;
+    width: var(--logo-width);
+    padding: 10px 0;
+  }
+
+  header h1 {
+    width: calc(100% - var(--logo-width) - 60px);
+    position: relative;
+    left: var(--logo-width);
+
+  }
+
+  header p {
+    width: calc(100% - var(--logo-width) - 60px);
+    position: relative;
+    left: var(--logo-width);
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu-toggle ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+
+  #menu-toggle ul li {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    margin-right: 1em;
+    background-color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  #menu-toggle ul .active {
+    background-color: var(--color-yellow);
+  }
+
+  #menu-toggle a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  #menu-toggle input,
+  #menu-toggle label {
+    display: none;
+    visibility: hidden;
+  }
+
+  #intro,
+  #plan,
+  #testimonials,
+  #about,
+  #contact {
+    padding: 1em 60px;
+  }
+
+  #img-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  #img-grid img {
+    width: calc(50% - 10px);
+  }
+
+  #img-grid picture {
+    width: 100%;
+  }
+
+  #img-grid picture img {
+    width: 100%;
+  }
+
+  #plan section {
+    width: 30%;
+  }
+
+  #testimonials div section {
+    width: 40%;
+    margin-bottom: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-light-gray);
+    padding: 1em 5em;
+  }
+
+  footer p {
+    flex-grow: 1;
+  }
+
+  #nums fieldset {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  #contact form input[type="submit"] {
+    align-self: flex-end;
+    width: 300px;
+  }
 }
 
-legend{
-	padding: 0.5em;
+@media (min-width: 1201px) {
+
+  #intro,
+  #plan,
+  #testimonials,
+  #about,
+  #contact {
+    padding: 1em 120px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  header img {
+    padding: 0;
+  }
+
+  header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #menu-toggle ul {
+    margin-top: 0;
+  }
+
+  #intro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vw;
+  }
+
+  #intro>div {
+    width: calc(50% - 120px);
+  }
+
+  #img-grid img {
+    height: 13vw;
+  }
+
+  #plan section {
+    width: 200px;
+  }
+
+  #testimonials div section {
+    width: 300px;
+  }
+
+  #contact form {
+    display: flex;
+  }
+
+  #contact form>div {
+    width: 30%;
+    margin: 0 1em;
+  }
+
 }
 
-fieldset label{
-	display: inline;
-	width: 60%;
+#plan {
+  background-color: var(--color-yellow);
 }
 
-fieldset input{
-	display: inline;
-	width: 20px;
+#plan div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-select{
-	display: block;
-	width: 95%;
-	margin: 0.25em auto 0.5em auto;
-	padding: 0.5em;
-	font-size: 1em;
+#plan section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-teal);
+  margin: 1em;
+  padding: 1em 2rem;
+  border-radius: 5px;
+  border: 2px solid var(--color-white);
+  height: 220px;
 }
 
-textarea{
-	width: 90%;
-	height: 100px;
-	margin: 0.25em auto 0.5em auto;
-	padding: 0.5em;
+#plan section img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 10px;
 }
 
-input[type="radio"]{
-	margin-top: 0.4em;
-	outline: none;
-	border: 1px solid #222;
-	border-radius: 25%;
+#testimonials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-input[type="submit"]{
-	font-size: 1.2em;
-	width: 95%;
-	margin-top: 1em;
-	padding: 0.5em;
-	border: none;
-	outline: none;
-	border-radius: 0.2em;
-	background-color: #0a58ff;
-	color: white;
+#testimonials h4 {
+  font-size: 1.5em;
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus{
-	background-color: #063599;
-	filter: drop-shadow(8px 8px 4px #777);
+q {
+  /* Sets the type of quotation marks */
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+  margin: 0;
 }
 
-footer{
-	padding: 1em;
-	border-top: 5px solid #0a58ff;
-	font-family: sans-serif;
-	text-align: center;
+#about {
+  background: var(--color-blue);
 }
 
+#about div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about div section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+
+#about div section img {
+  height: 80px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact h3 span {
+  color: var(--color-dark-gray);
+  font-style: italic;
+  font-family: 'Montserrat';
+  font-size: medium;
+}
+
+form {
+  margin-top: 1em;
+}
+
+form .required {
+  color: var(--color-purple);
+}
+
+#contact form label {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#contact form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form input {
+  padding: 1em;
+  margin-top: 5px;
+  margin-bottom: 1em;
+  border: 2px solid var(--color-purple);
+  border-spacing: 10px;
+  font-family: 'Montserrat';
+}
+
+#contact form input[type="submit"] {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Hide default radio input */
+.radio-input input[type="radio"] {
+  display: none;
+}
+
+fieldset>label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+}
+
+.radio-control {
+  display: inline-flex;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-white);
+  border: 2px solid var(--color-purple);
+  margin-right: 1em;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.radio-control::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-purple);
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.radio-input input[type="radio"]:checked+.radio-control::after {
+  transform: scale(1);
+}
+
+.radio-label {
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.5em;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+#selects select {
+  padding: 1em;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 1em;
+  border: 2px solid var(--color-purple);
+  font-family: 'Montserrat';
+  appearance: none;
+  cursor: pointer;
+}
+
+#selects select {
+  /* Path to custom arrow icon */
+  background-image: url('images/arrow.svg');
+  background-repeat: no-repeat;
+  /* Positioning the icon to the right */
+  background-position: right 10px center;
+  /* icon sizing */
+  background-size: 24px 24px;
+  
+}
+
+footer a {
+  margin: 0.5em 1em;
+  justify-self: flex-end;
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: small;
+}
